@@ -1,0 +1,28 @@
+{
+  "name": "peer-server-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "start": "npm run build && ./bin/peerjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "cors": "^2.8.5",
+    "events": "^3.1.0",
+    "express": "^4.17.1",
+    "net": "^1.0.2",
+    "uuid": "^8.1.0",
+    "ws": "^7.3.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1"
+  }
+}
